@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height:auto;
+    width: 100%;
+    position: relative;
+    
+}
+.nav{
+    height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: gainsboro;
+    opacity:0.9;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 25px;
+    z-index: 10;
+}
+.rm{
+    
+    font-weight: bold;
+    opacity: 100%;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   
+    color: blueviolet;
+
+}
+.contact{
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    background-color: blueviolet;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+
+a{
+    
+    text-decoration: none;
+    margin: 0px 10px; 
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 10px 20px ;
+    
+}
+.logo{
+    
+    transition: 0.6s ease-in-out;
+}
+.pic{
+    margin-top: 30px;
+    height: 130px;
+    width: 120px;
+    border-radius: 50%;
+}
+.frame{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+.links{
+    margin-top: 20px;
+}
+i{
+    font-size: 30px;
+    margin-left: 20px;
+}
+span{
+    color: blueviolet;
+}
+.pic{
+    margin-bottom: 20px;
+}
+.your-name{
+    margin-bottom: 20px;
+}
+.bac-img{
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    filter: drop-shadow(10px 10px 10px rgb(153, 152, 152));
+}
+
+.lang-name{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.icons{
+    width: 100%;
+    background-color: rgb(213, 181, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+.icons-wrap{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.icons-wrap:hover .icons-name{
+    opacity: 1;
+    
+}
+i{
+    margin: 10px;
+}
+.lang{
+    font-size: 130px;
+    
+    
+}
+.icons-name{
+    margin: 10px;
+    opacity: 0;
+    font-size: 20px;
+}
+.icons-name:hover{
+    opacity: 1;
+
+}
+.wrapcard
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cardimg{
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    object-fit:cover;
+}
+.card{
+    width: 50%;
+    height: 550px;
+    margin-bottom: 100px;
+    box-shadow: 10px 20px 90px 0 rgb(125, 122, 122);
+    border-radius: 5%;
+}
+.foot{
+    height: 40vh;
+    background-color: rgb(213, 181, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footlinks{
+    font-size: 35px;
+    margin: 20px;
+
+}
+.footimg{
+    height: 138px;
+    width: 150px;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+}
+.footpara{
+    font-size: 25px;
+    margin: 20px;
+}
+.mail{
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    opacity: 0.7;
+}
+.mail i{
+    animation-name: email;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes email{
+    0% {transform: scale(0.8)}
+
+    50%{transform: scale(1.2);}
+
+    100%{transform: scale(0.8);}
+    
+
+}
+@media screen and (max-width:412px) {
+
+    .nav{
+        height: 90px;
+        position: sticky;
+        top: 0;
+        background-color: gainsboro;
+        opacity:0.9;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        z-index: 10;
+    }
+    .contact{
+        border: none;
+        border-radius: 30px;
+        padding: 10px 5px ;
+        background-color: blueviolet;
+        font-size: 18px;
+        color: aliceblue;
+    }
+    a{
+    
+        text-decoration: none;
+        margin: 0px 5px;
+        font-size: 18px;
+    }
+    .logo{
+        font-size: 22px;
+        font-weight: 900;
+        margin-left: 6px;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+        animation-duration: 100ms;
+        background-color: blueviolet;
+        color: aliceblue;
+        border-radius: 15px;
+        padding: 4px;
+
+        
+    }
+}
